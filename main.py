@@ -362,12 +362,12 @@ def main(page: ft.Page):
                 category,
                 ft.Row([
                     new_cat_input,
-                    ft.ElevatedButton("Kategori Ekle", on_click=add_category_click)
+                    ft.FilledButton("Kategori Ekle", on_click=add_category_click)
                 ]),
                 barcode,
                 quantity,
                 ft.Row([
-                    ft.ElevatedButton("Resim Seç", icon=ft.Icons.IMAGE, on_click=lambda _: file_picker.pick_files(allowed_extensions=["png", "jpg", "jpeg", "webp"])),
+                    ft.FilledButton("Resim Seç", icon=ft.Icons.IMAGE, on_click=lambda _: file_picker.pick_files(allowed_extensions=["png", "jpg", "jpeg", "webp"])),
                     img_preview
                 ]),
                 save_button,
